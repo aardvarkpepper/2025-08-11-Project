@@ -4,7 +4,7 @@ import { ThemeContext } from '../contexts/contexts';
 import { themeData } from '../data/themeData';
 
 export const ThemeProvider = ({children}: React.PropsWithChildren) => {
-  const [theme, setTheme] = useState<Theme>({ id: 0, theme: 'Dark'});
+  const [theme, setTheme] = useState<Theme>({ id: 0, theme: 'dark'}); // note:  Initial value here is actually set by ThemeContext.  Look into this.
 
   const cycleTheme = (currentId: number) => {
     setTheme(prev => {

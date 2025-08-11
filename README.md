@@ -1,4 +1,16 @@
-Reflection Document:
+## Reflection
+
+## Development
+
+Per assignment instructions, I started from Frontend Mentor 'challenge' at http://frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca
+
+## Resources
+
+Used code I'd written in previous assignments, particularly Module 10 Skills Based Assessment.
+
+https://htmlcolors.com/hsl-to-hex
+https://fonts.google.com/icons
+
 
 Write a 200-300 word reflection discussing your development process, challenges faced, solutions implemented, and potential improvements.
 Include this reflection in your GitHub repository.

@@ -1,42 +1,85 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+body {
+  font-family: "Nunito Sans", sans-serif;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.dark {
+  background-color: hsl(207, 26%, 17%);
+  color: hsl(0, 0%, 100%);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.fullscreen {
+  min-width: 100vw;
+  min-height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.dark .dark-alt {
+  background-color: hsl(209, 23%, 22%);
+  color: hsl(0, 0%, 100%);
 }
 
-.card {
-  padding: 2em;
+.dark button {
+  background-color: hsl(209, 23%, 22%);
+  color: hsl(0, 0%, 100%);
 }
 
-.read-the-docs {
-  color: #888;
+.flex {
+  display: flex;
 }
+
+.jc-spacebetween {
+  justify-content: space-between;
+}
+
+.ai-center {
+  align-items: center;
+}
+
+.ml-05rem{
+  margin-left: 0.5rem;
+}
+
+.ml-20rem{
+  margin-left: 2rem;
+}
+
+.fs-15rem{
+  font-size: 1.5rem;
+}
+
+.fw-300 {
+  font-weight: 300;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-800 {
+  font-weight: 800;
+}
+
+.p-12rem{
+  padding: 1.2rem;
+}
+
+/* - Dark Blue (Dark Mode Elements): hsl(209, 23%, 22%) // #2b3945
+- Very Dark Blue (Dark Mode Background): hsl(207, 26%, 17%)
+- Very Dark Blue (Light Mode Text): hsl(200, 15%, 8%)
+- Dark Gray (Light Mode Input): hsl(0, 0%, 52%)
+- Very Light Gray (Light Mode Background): hsl(0, 0%, 98%)
+- White (Dark Mode Text & Light Mode Elements): hsl(0, 0%, 100%)
+
+// <weight>: Use a value from 200 to 1000
+// <uniquifier>: Use a unique and descriptive class name
+
+.nunito-sans-<uniquifier> {
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100,
+    "YTLC" 500;
+}
+
+*/
