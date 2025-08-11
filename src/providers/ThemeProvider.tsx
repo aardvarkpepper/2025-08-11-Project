@@ -8,10 +8,13 @@ export const ThemeProvider = ({children}: React.PropsWithChildren) => {
 
   const cycleTheme = (currentId: number) => {
     setTheme(prev => {
+      console.log(`cT invoked with ${currentId}; object ${JSON.stringify(themeData[currentId])}`);
       const newIndex = (prev.id + 1) % themeData.length;
-      return themeData[newIndex];
+      console.log(`cT attempting to change to ${JSON.stringify({ id: themeData[newIndex].id, theme: themeData[newIndex].theme})}`);
+      return { id: themeData[newIndex].id, theme: themeData[newIndex].theme};
     })
   };
+
 
   const selectTheme = (newId: number) => {
     setTheme(themeData[newId]);

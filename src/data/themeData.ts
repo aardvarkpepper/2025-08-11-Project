@@ -1,10 +1,10 @@
 export const themeData = [
   {
     id: 0,
-    theme: 'Dark',
+    theme: 'dark',
   },
   {
     id: 1,
-    theme: 'Light',
+    theme: 'light',
   },
 ]
