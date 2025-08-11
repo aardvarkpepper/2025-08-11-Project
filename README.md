@@ -10,7 +10,8 @@ Used code I'd written in previous assignments, particularly Module 10 Skills Bas
 
 https://htmlcolors.com/hsl-to-hex
 https://fonts.google.com/icons
-
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import/with
 
 Write a 200-300 word reflection discussing your development process, challenges faced, solutions implemented, and potential improvements.
 Include this reflection in your GitHub repository.
