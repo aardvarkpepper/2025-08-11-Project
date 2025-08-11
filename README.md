@@ -3,6 +3,16 @@ Reflection Document:
 Write a 200-300 word reflection discussing your development process, challenges faced, solutions implemented, and potential improvements.
 Include this reflection in your GitHub repository.
 
+- See all countries from the API on the homepage
+- Search for a country using an `input` field
+- Filter countries by region
+- Click on a country to see more detailed information on a separate page
+- Click through to the border countries on the detail page
+- Toggle the color scheme between light and dark mode *(optional)*
+
+There are no assets for this challenge, as the country flags will be pulled from the [REST Countries API](https://restcountries.com) and you can use an icon font library for the icons.
+
+
 - Mobile: 375px
 - Desktop: 1440px
 
