@@ -3,6 +3,11 @@ export interface Theme {
   theme: string;
 }
 
+export interface RegionContextType {
+  region: string;
+  setRegion: any;
+}
+
 export interface ThemeContextType {
   theme: Theme;
   cycleTheme: (currentId: number) => void;

@@ -3,7 +3,8 @@ import { useContext } from "react";
 import { ThemeContext } from './contexts/contexts';
 
 import './App.css'
-import { ThemeProvider } from './providers/ThemeProvider';
+// import { AppProvider } from './providers/AppProvider';
+import { AppProvider } from './providers/AppProvider';
 import { AppWrapper } from './components/AppWrapper';
 
 import { TitleBar } from './components/TitleBar';
@@ -12,15 +13,17 @@ import { CountryPage } from './pages/CountryPage/CountryPage';
 
 function App() {
   return (
-    <ThemeProvider>
+    <AppProvider>
       <AppWrapper>
         <TitleBar />
+        {/* <Link to="/"><span>Home Page</span></Link> */}
+        {/* <Link to="/"><span>Home Page</span></Link> */}
         <Routes>
           <Route path='/' element={<HomePage />} />
           <Route path='/country/:country' element={<CountryPage />} />
         </Routes>
       </AppWrapper>
-    </ThemeProvider>
+    </AppProvider>
   )
 }
 

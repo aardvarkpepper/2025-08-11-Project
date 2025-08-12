@@ -5,4 +5,4 @@ const extractRegions = (arrayOfObjects = data) => {
   return Array.from(regionSet);
 };
 
-// console.log(extractRegions());
+// console.log(extractRegions()); // ['Asia', 'Europe', 'Africa', 'Oceania', 'Americas', 'Polar', 'Antarctic Ocean', 'Antarctic']

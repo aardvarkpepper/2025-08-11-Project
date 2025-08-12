@@ -2,6 +2,27 @@ body {
   font-family: "Nunito Sans", sans-serif;
 }
 
+select {
+  background-color: hsl(209, 23%, 22%);
+  color: hsl(0, 0%, 100%);
+}
+
+option {
+  background-color: hsl(209, 23%, 22%);
+  color: hsl(0, 0%, 100%);
+}
+
+.selectcustom {
+  &, &::picker(select) {
+    appearance: base-select;
+  }
+}
+
+/* .optioncustom {
+  border: 0;
+  -webkit-appearance: none;
+} */
+
 .dark {
   background-color: hsl(207, 26%, 17%);
   color: hsl(0, 0%, 100%);

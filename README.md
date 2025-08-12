@@ -1,3 +1,7 @@
+## Setup
+
+This project is best viewed with Chrome, due to CSS styling that may not work with other browsers.  Notes on design decisions later.
+
 ## Reflection
 
 ## Development
@@ -12,6 +16,20 @@ https://htmlcolors.com/hsl-to-hex
 https://fonts.google.com/icons
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import/with
+https://www.geeksforgeeks.org/reactjs/react-onkeydown-event/
+https://css-tricks.com/dropdown-default-styling/
+https://developer.chrome.com/blog/a-customizable-select
+https://stackoverflow.com/questions/65823778/how-can-i-define-type-for-setstate-when-react-dispatchreact-setstateactionstri
+
+## Design Decisions
+
+Select (dropdown) options apparently cannot be normally customized with CSS styling, possibly for security reasons.  The Frontend Mentor uses a dropdown with CSS styling, possibly created with div tags and customized behavior.
+
+However, select elements are used by tools like screen readers.  Customized controls and ARIA labeling may be used with customized divs to improve accessibility, but apparently performance is uneven.
+
+I decided to go with https://developer.chrome.com/blog/a-customizable-select that disables some functionality of selects yet allows custom styling.
+
+===
 
 Write a 200-300 word reflection discussing your development process, challenges faced, solutions implemented, and potential improvements.
 Include this reflection in your GitHub repository.
