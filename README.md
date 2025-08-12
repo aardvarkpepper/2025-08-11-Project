@@ -22,6 +22,10 @@ https://developer.chrome.com/blog/a-customizable-select
 https://stackoverflow.com/questions/65823778/how-can-i-define-type-for-setstate-when-react-dispatchreact-setstateactionstri
 https://www.w3schools.com/css/css3_object-fit.asp
 
+Note:  Developer stated huge bandwidth consumption and cost were ongoing issues, so updated fetch methods to request only required data.
+https://gitlab.com/restcountries/restcountries/-/issues/265
+https://www.worldatlas.com/articles/what-languages-are-spoken-in-bosnia-and-herzegovina.html
+
 ## Design Decisions
 
 Select (dropdown) options apparently cannot be normally customized with CSS styling, possibly for security reasons.  The Frontend Mentor uses a dropdown with CSS styling, possibly created with div tags and customized behavior.
@@ -29,6 +33,10 @@ Select (dropdown) options apparently cannot be normally customized with CSS styl
 However, select elements are used by tools like screen readers.  Customized controls and ARIA labeling may be used with customized divs to improve accessibility, but apparently performance is uneven.
 
 I decided to go with https://developer.chrome.com/blog/a-customizable-select that disables some functionality of selects yet allows custom styling.
+
+The example provided by Frontend Mentor showed Belgium's 'native name' as België.  This is from Dutch, the most commonly spoken language in Belgium, and listed third in nativeName.  However, Bosnia and Herzegovina's most commonly spoken language is Bosnian, the native name being listed first in nativeName.  (per https://www.worldatlas.com/articles/what-languages-are-spoken-in-bosnia-and-herzegovina.html).  There is no field indicating a country's primary language.
+
+The example provided by Frontend Mentor showed Belgium's border countries as France, Germany, and Netherlands.  Luxembourg was not included.  However, I could find no reason why Luxembourg was not included, so included it in this assignment.  All countries listed in the database as bordering a country are listed.
 
 ===
 
