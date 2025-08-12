@@ -8,12 +8,12 @@ import { useFetch } from "../../hooks/useFetch";
 
 export const HomePage = () => {
   const { region, setRegion } = useContext(RegionContext);
-  console.log(`HomePage Region: ${region}`);
-  let fetchAddress = 'https://restcountries.com/v3.1/all?fields=name,flags,region,population,capital'
+  // console.log(`HomePage Region: ${region}`);
+  let fetchAddress = 'https://restcountries.com/v3.1/all?fields=name,flags,region,population,capital';
   if (region) {
-    fetchAddress = `https://restcountries.com/v3.1/region/${region}`
+    fetchAddress = `https://restcountries.com/v3.1/region/${region}?fields=name,flags,region,population,capital`;
   }
-  console.log('Fetching:', fetchAddress);
+  // console.log('Fetching:', fetchAddress);
 
   const { data, loading, error } = useFetch(fetchAddress);
   console.log('Data received', data);
