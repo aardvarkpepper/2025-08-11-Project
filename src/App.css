@@ -1,5 +1,6 @@
 body {
   font-family: "Nunito Sans", sans-serif;
+  background-color: hsl(0, 0%, 98%);
 }
 
 select {
@@ -26,6 +27,11 @@ option {
 .fullscreen {
   min-width: 100vw;
   min-height: 100vh;
+}
+
+.dark-alt {
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 0 0 6px hsl(0, 0%, 52%);
 }
 
 .dark .dark-alt {
@@ -104,9 +110,11 @@ option {
   padding-bottom: 0.5rem;
 }
 
+/* black border in case flag has white in its border */
 .card-img-container {
   width: 264px;
   height: 176px;
+  border: 1px solid hsl(209, 23%, 22%);
 }
 
 .cards-container {
