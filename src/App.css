@@ -18,11 +18,6 @@ option {
   }
 }
 
-/* .optioncustom {
-  border: 0;
-  -webkit-appearance: none;
-} */
-
 .dark {
   background-color: hsl(207, 26%, 17%);
   color: hsl(0, 0%, 100%);
@@ -81,6 +76,42 @@ option {
 
 .p-12rem{
   padding: 1.2rem;
+}
+
+.of-contain {
+  object-fit: contain;
+}
+
+.wh100 {
+  width: 100%;
+  height: 100%;
+}
+
+.card {
+  width: 264px;
+  height: 336px;
+  border-radius: 4px;
+  margin: 2rem;
+}
+
+.card-content {
+  padding-left: 1rem;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.card-img-container {
+  width: 264px;
+  height: 176px;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /* - Dark Blue (Dark Mode Elements): hsl(209, 23%, 22%) // #2b3945

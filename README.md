@@ -20,6 +20,7 @@ https://www.geeksforgeeks.org/reactjs/react-onkeydown-event/
 https://css-tricks.com/dropdown-default-styling/
 https://developer.chrome.com/blog/a-customizable-select
 https://stackoverflow.com/questions/65823778/how-can-i-define-type-for-setstate-when-react-dispatchreact-setstateactionstri
+https://www.w3schools.com/css/css3_object-fit.asp
 
 ## Design Decisions
 
