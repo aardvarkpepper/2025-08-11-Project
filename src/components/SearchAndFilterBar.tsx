@@ -5,7 +5,6 @@ import { RegionContext, ThemeContext } from "../contexts/contexts";
 import darkSearchIcon from '../assets/darkSearchIcon.png';
 import lightSearchIcon from '../assets/lightSearchIcon.png';
 
-
 /**
  * Note:  Only five regions are included in filter per template.  However, there are actually eight regions recognized in database.
  * Africa, America, Asia, Europe, Oceania
@@ -20,11 +19,11 @@ export const SearchAndFilterBar = () => {
 
   const navigate = useNavigate();
 
-  const handleChange = (event: any) => {
-    setTextInput(event.target.value);
+  const handleChange = (event: React.FormEvent<HTMLInputElement>) => {
+    setTextInput(event.currentTarget.value);
   }
 
-  const handleKeyDown = (event: any) => {
+  const handleKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
     // console.log('hKD', event.key);
     if (event.key === 'Enter') {
       navigate(`/country/${textInput}`)

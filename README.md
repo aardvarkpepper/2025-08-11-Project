@@ -29,7 +29,9 @@ A few minor challenges, mostly from unfamiliarity or insufficient ideation.
 
 For example, I hadn't thought through how useFetch would pass data from one element to the next; I used useFetch in two different places thinking state would transfer, but turns out each instantiation is different.  I could have switched to simple passing state up and down, but implemented a context and provider for practice.
 
-Tweaking CSS was a bit of a bother, not because of any technical challenge, but due to lack of specifications.  Frontend Mentor did not provide enough detail or examples to handle edge cases, or generally instructions on dynamic resizing in a range of window sizes.  For example, most countries in full screen display the flag to the left of printed material, but China has fourteen neighboring countries, causing flex-wrap to display the flag above printed material.  Alternately, changing the printed material to exceed the y-axis dimensions of the flag would have broken the mold, only in a different way.
+Tweaking CSS was a bit of a bother, not because of any technical challenge, but due to lack of specifications.  Frontend Mentor did not provide enough detail or examples to handle edge cases, or generally instructions on dynamic resizing in a range of window sizes.  For example, most countries in full screen display the flag to the left of printed material, but China has fourteen neighboring countries, causing flex-wrap to display the flag above printed material.  Alternately, changing the printed material to exceed the y-axis dimensions of the flag would have broken the mold, only in a different way.  Nepal has a flag different to the more common rectangular type.
+
+Color contrast between flags and the background colors was a bit of an issue too.  Monaco has a flag with white on an edge, and a squarish shape.  Germany has a flag with black on the edge and a lengthy rectangular shape.
 
 Typescript a bit of a bother too, mostly defining types and such.  After practice through previous assignments (and this assignment), I've gotten to being able to resolve errors that pop up.
 
@@ -41,7 +43,7 @@ Netlify will not deploy code that is considered to have Typescript 'errors', eve
 
 It works pretty much as intended.  Could have put in a jolly lot more work to get pixel-perfect results, but the assignment isn't graded on those criteria.
 
-There are some oddities, like accounting for irregular flag sizes, accounting for flags with white on their edges, countries with long names, but that's okay.
+There are some oddities, like accounting for irregular flag sizes, accounting for flags with white or black on their edges, countries with long names.  I think I could use HTML Canvas to sample colors and get appropriately contrasting colors, or write exceptions.  However, I left off as switching to dark mode typically makes dimensions clear.
 
 ## Potential Improvements
 
