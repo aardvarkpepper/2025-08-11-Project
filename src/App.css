@@ -5,6 +5,7 @@ body {
 
 button {
   margin: 0.25rem;
+  box-shadow: 0 0 2px hsl(0, 0%, 52%);
 }
 
 select {
