@@ -1,4 +1,4 @@
-import { useContext, useState, useEffect } from "react";
+import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { SearchAndFilterBar } from "../../components/SearchAndFilterBar";
 import { RegionContext } from "../../contexts/contexts";
@@ -7,7 +7,7 @@ import { useFetch } from "../../hooks/useFetch";
 // import data from '../../data/data.json' with {type: 'json'};
 
 export const HomePage = () => {
-  const { region, setRegion } = useContext(RegionContext);
+  const { region} = useContext(RegionContext);
   const navigate = useNavigate();
   let fetchAddress = 'https://restcountries.com/v3.1/all?fields=name,flags,region,population,capital';
   if (region) {

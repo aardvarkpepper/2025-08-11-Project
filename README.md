@@ -29,9 +29,11 @@ Typescript a bit of a bother too, mostly defining types and such.  After practic
 
 Bit of a odd spot where I used the .json provided by Frontend Mentor, then switched to fetch, and discovered the two had different data structures.
 
+Apparently Netlify will not deploy code that is considered to have Typescript 'errors', even if those errors do not prevent code from being run, including variables not being used even in context files.
+
 ## Solutions Implemented
 
-It works pretty much as intended.
+It works pretty much as intended - in the end.
 
 There are some oddities, like accounting for irregular flag sizes, accounting for flags with white on their edges, countries with long names, but that's okay.
 
@@ -54,6 +56,7 @@ https://css-tricks.com/dropdown-default-styling/
 https://developer.chrome.com/blog/a-customizable-select
 https://stackoverflow.com/questions/65823778/how-can-i-define-type-for-setstate-when-react-dispatchreact-setstateactionstri
 https://www.w3schools.com/css/css3_object-fit.asp
+https://www.quora.com/How-do-you-fix-a-declared-but-its-value-is-never-read-false-positive-error-in-Typescript
 
 Note:  Developer stated huge bandwidth consumption and cost were ongoing issues, so updated fetch methods to request only required data.
 https://gitlab.com/restcountries/restcountries/-/issues/265

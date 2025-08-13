@@ -1,10 +1,10 @@
 import { createContext } from "react";
-import type { RegionContextType, Theme, ThemeContextType } from "../types";
+import type { RegionContextType, ThemeContextType } from "../types";
 
 export const ThemeContext = createContext<ThemeContextType>({
   theme: { id: 0, theme: 'dark' },
-  cycleTheme: (currentId: number) => {},
-  selectTheme: (newId: number) => {},
+  cycleTheme: (_currentId: number) => {},
+  selectTheme: (_newId: number) => {},
 })
 
 export const RegionContext = createContext<RegionContextType>({

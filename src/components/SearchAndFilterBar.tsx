@@ -1,4 +1,4 @@
-import { useContext, useState, useEffect } from "react";
+import { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { RegionContext, ThemeContext } from "../contexts/contexts";
 
@@ -15,7 +15,7 @@ import lightSearchIcon from '../assets/lightSearchIcon.png';
 export const SearchAndFilterBar = () => {
 
   const { theme } = useContext(ThemeContext);
-  const { region, setRegion } = useContext(RegionContext);
+  const { setRegion } = useContext(RegionContext);
   const [textInput, setTextInput] = useState("");
 
   const navigate = useNavigate();

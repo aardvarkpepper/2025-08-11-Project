@@ -1,6 +1,4 @@
-import { Routes, Route, Link, useNavigate } from 'react-router-dom';
-import { useContext } from "react";
-import { ThemeContext } from './contexts/contexts';
+import { Routes, Route } from 'react-router-dom';
 
 import './App.css'
 // import { AppProvider } from './providers/AppProvider';

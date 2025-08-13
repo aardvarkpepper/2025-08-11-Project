@@ -5,13 +5,13 @@ import darkDarkModeIcon from '../assets/darkDarkModeIcon.png';
 import lightDarkModeIcon from '../assets/lightDarkModeIcon.png';
 
 export const TitleBar = () => {
-  const { theme, cycleTheme, selectTheme } = useContext(ThemeContext);
+  const { theme, cycleTheme } = useContext(ThemeContext);
   const navigate = useNavigate();
 
-  const handleCycleTheme = (event: any) => {
-    console.log(`hCT invoked with ${event.target.name}`);
-    cycleTheme(Number(event.key.name));
-  }
+  // const handleCycleTheme = (event: any) => {
+  //   console.log(`hCT invoked with ${event.target.name}`);
+  //   cycleTheme(Number(event.key.name));
+  // }
   
   return (
     <div className='dark-alt flex jc-spacebetween ai-center'>
