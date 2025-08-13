@@ -33,7 +33,7 @@ export const HomePage = () => {
       <div>
         <div className='cards-container jc-center'>
           {data.filter((element: any) => region === "" || element.region === region).map((element: any) =>
-            <div key={`homepage-${element.name.official}`} className='dark-alt card' onClick={() => navigate(`./country/${element.name.official}`)}>
+            <div key={`homepage-${element.name.official}`} className='dark-alt card' tabIndex={0} onClick={() => navigate(`./country/${element.name.official}`)} onKeyDown={(event) => event.key === 'Enter' ? navigate(`./country/${element.name.official}`) : null}>
               <div className='card-img-container'>
                 <img src={element.flags.png} className='of-contain wh100' />
               </div>

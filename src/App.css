@@ -8,6 +8,11 @@ button {
   box-shadow: 0 0 2px hsl(0, 0%, 52%);
 }
 
+.dark button {
+  background-color: hsl(209, 23%, 22%);
+  color: hsl(0, 0%, 100%);
+}
+
 select {
   background-color: hsl(0, 0%, 100%);
   color: hsl(209, 23%, 22%);
@@ -52,11 +57,6 @@ option {
 }
 
 .dark .dark-alt {
-  background-color: hsl(209, 23%, 22%);
-  color: hsl(0, 0%, 100%);
-}
-
-.dark button {
   background-color: hsl(209, 23%, 22%);
   color: hsl(0, 0%, 100%);
 }
