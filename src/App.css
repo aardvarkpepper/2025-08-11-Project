@@ -87,10 +87,14 @@ option {
   margin-left: 2rem;
 }
 
-@media (max-width: 980px) {
+/* @media (max-width: 980px) {
   .ml-58rem {
     margin-left: 5.8rem;
   }
+} */
+
+.pr-80rem {
+  padding-right: 8rem;
 }
 
 .mr-80rem {

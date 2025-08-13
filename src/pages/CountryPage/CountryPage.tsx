@@ -56,19 +56,14 @@ export const CountryPage = () => {
             <img className='of-contain wh100' src={data[0].flags.svg} alt={`Flag of ${data[0].name.common}`} />
           </div>
 
-          <div className='section-container flex-wrap jc-spaceevenly'>
-
-            <div className='flex jc-spacebetween'>
-              <div>
-                <h2 className='ml-58rem'>{data[0].name.common}</h2>
-                <br />
-              </div>
-              <div>
-              </div>
+          <div className='section-container flex-wrap'>
+            <div className='ml-20rem'>
+              <h2>{data[0].name.common}</h2>
+              <br />
             </div>
 
-            <div className='flex jc-spaceevenly flex-wrap'>
-              <div className='section2  mr-80rem'>
+            <div className='flex flex-wrap'>
+              <div className='section2 ml-20rem pr-80rem '>
                 <div><span className='fw-800'>Native Name:</span><span>&nbsp;{nativeName}</span></div>
                 <br />
                 <div><span className='fw-800'>Population:</span><span>&nbsp;{data[0].population}</span></div>
@@ -81,7 +76,7 @@ export const CountryPage = () => {
                 <br />
                 <br />
               </div>
-              <div className='section3 mr-80rem'>
+              <div className='section3 ml-20rem pr-80rem '>
                 <div><span className='fw-800'>Top Level Domain:</span><span>&nbsp;{data[0].tld[0]}</span></div>
                 <br />
                 <div><span className='fw-800'>Currencies:</span><span>&nbsp;{currenciesArrayString}</span></div>
@@ -93,8 +88,8 @@ export const CountryPage = () => {
             </div>
             {/* // horizontal container 2 sections; contains 'native name'... and 'top level domain' ... sections */}
 
-            <div className='section4'>
-              <div className="flexh">
+            <div className='section4 ml-20rem'>
+              <div className="flex flex-wrap ai-center">
                 <span>Border Countries:</span>
                 {bordersArray.map((element: string) => <button key={objCCA3ToCountry[element]} name={objCCA3ToCountry[element]} onClick={handleSubmitCountryeSelect}>{objCCA3ToCountry[element]}</button>)}
               </div>
