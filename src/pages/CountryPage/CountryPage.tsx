@@ -52,7 +52,7 @@ export const CountryPage = () => {
 
         <div className='flex ai-center jc-spaceevenly flex-wrap'>
 
-          <div className='card-large-img-container flex ai-center'>
+          <div className='card-large-img-container flex'>
             <img className='of-contain wh100' src={data[0].flags.svg} alt={data[0].flags.alt} />
           </div>
 
