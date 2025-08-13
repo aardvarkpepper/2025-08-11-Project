@@ -30,24 +30,24 @@ export const HomePage = () => {
   //https://restcountries.com/v3.1/region/europe
   // https://restcountries.com/v3.1/subregion/Northern Europe
 
-  
+
   return (
     <div>
-      <div>{region}</div>
       <SearchAndFilterBar />
-      <div>Home Page</div>
-      <div className='cards-container'>
-        {data.filter((element: any) => region === "" || element.region === region).map((element: any) => <div key={`homepage-${element.name.official}`} className='dark-alt card'>
-          <div className='card-img-container'>
-            <img src={element.flags.png} className='of-contain wh100' />
-          </div>
-          <div className='card-content'>
-            <div className='fw-800 card-title'>{element.name.official}</div>
-            <div><span className='fw-800'>Population:</span> {element.population}</div>
-            <div><span className='fw-800'>Region:</span> {element.region}</div>
-            <div><span className='fw-800'>Capital:</span> {element.capital}</div>
-          </div>
-        </div>)}
+      <div>
+        <div className='cards-container jc-center'>
+          {data.filter((element: any) => region === "" || element.region === region).map((element: any) => <div key={`homepage-${element.name.official}`} className='dark-alt card'>
+            <div className='card-img-container'>
+              <img src={element.flags.png} className='of-contain wh100' />
+            </div>
+            <div className='card-content'>
+              <div className='fw-800 card-title'>{element.name.official}</div>
+              <div><span className='fw-800'>Population:</span> {element.population}</div>
+              <div><span className='fw-800'>Region:</span> {element.region}</div>
+              <div><span className='fw-800'>Capital:</span> {element.capital}</div>
+            </div>
+          </div>)}
+        </div>
       </div>
     </div>
     // <div>

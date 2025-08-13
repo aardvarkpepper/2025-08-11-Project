@@ -37,7 +37,7 @@ export const SearchAndFilterBar = () => {
 
   return (
     <div className='flex jc-spacebetween ai-center'>
-      <div className='dark-alt ai-center'>
+      <div className='dark-alt flex ai-center jc-center'>
         <img src={theme.theme === 'dark' ? lightSearchIcon : darkSearchIcon} />
         <input type='text' value={textInput} onChange={handleChange} onKeyDown={handleKeyDown}></input>
       </div>

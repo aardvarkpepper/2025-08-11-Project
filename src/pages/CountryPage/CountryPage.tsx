@@ -108,7 +108,7 @@ export const CountryPage = () => {
     <div>
       <div>
         <br />
-        <button>Back</button>
+        <button onClick={() => navigate(-1)}>Back</button>
         <br />
       </div>
 

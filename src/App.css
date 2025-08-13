@@ -8,11 +8,21 @@ button {
 }
 
 select {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(209, 23%, 22%);
+}
+
+.dark select {
   background-color: hsl(209, 23%, 22%);
   color: hsl(0, 0%, 100%);
 }
 
 option {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(209, 23%, 22%);
+}
+
+.dark option {
   background-color: hsl(209, 23%, 22%);
   color: hsl(0, 0%, 100%);
 }
@@ -35,6 +45,7 @@ option {
 
 .dark-alt {
   background-color: hsl(0, 0%, 100%);
+  color: hsl(209, 23%, 22%);
   box-shadow: 0 0 6px hsl(0, 0%, 52%);
 }
 
@@ -139,6 +150,7 @@ option {
 .cards-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .loader {
