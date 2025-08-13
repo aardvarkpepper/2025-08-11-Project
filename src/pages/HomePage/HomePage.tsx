@@ -1,4 +1,5 @@
 import { useContext, useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { SearchAndFilterBar } from "../../components/SearchAndFilterBar";
 import { RegionContext } from "../../contexts/contexts";
 import { useFetch } from "../../hooks/useFetch";
@@ -8,6 +9,7 @@ import { useFetch } from "../../hooks/useFetch";
 
 export const HomePage = () => {
   const { region, setRegion } = useContext(RegionContext);
+  const navigate = useNavigate();
   // console.log(`HomePage Region: ${region}`);
   let fetchAddress = 'https://restcountries.com/v3.1/all?fields=name,flags,region,population,capital';
   if (region) {
@@ -30,23 +32,25 @@ export const HomePage = () => {
   //https://restcountries.com/v3.1/region/europe
   // https://restcountries.com/v3.1/subregion/Northern Europe
 
-
+  // Time running a bit short, or I'd change mapped div to button.
   return (
     <div>
       <SearchAndFilterBar />
       <div>
         <div className='cards-container jc-center'>
-          {data.filter((element: any) => region === "" || element.region === region).map((element: any) => <div key={`homepage-${element.name.official}`} className='dark-alt card'>
-            <div className='card-img-container'>
-              <img src={element.flags.png} className='of-contain wh100' />
+          {data.filter((element: any) => region === "" || element.region === region).map((element: any) =>
+            <div key={`homepage-${element.name.official}`} className='dark-alt card' onClick={() => navigate(`./country/${element.name.official}`)}>
+              <div className='card-img-container'>
+                <img src={element.flags.png} className='of-contain wh100' />
+              </div>
+              <div className='card-content'>
+                <div className='fw-800 card-title'>{element.name.official}</div>
+                <div><span className='fw-800'>Population:</span> {element.population}</div>
+                <div><span className='fw-800'>Region:</span> {element.region}</div>
+                <div><span className='fw-800'>Capital:</span> {element.capital}</div>
+              </div>
             </div>
-            <div className='card-content'>
-              <div className='fw-800 card-title'>{element.name.official}</div>
-              <div><span className='fw-800'>Population:</span> {element.population}</div>
-              <div><span className='fw-800'>Region:</span> {element.region}</div>
-              <div><span className='fw-800'>Capital:</span> {element.capital}</div>
-            </div>
-          </div>)}
+          )}
         </div>
       </div>
     </div>
