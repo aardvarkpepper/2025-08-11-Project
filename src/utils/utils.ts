@@ -23,4 +23,5 @@ const extractCCA3 = (arrayOfObjects = dataNameCCA3) => {
 }
 
 // console.log(JSON.stringify(extractCCA3()));
-console.log(extractCCA3());
+// console.log(extractCCA3());
+

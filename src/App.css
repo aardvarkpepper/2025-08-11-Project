@@ -3,6 +3,10 @@ body {
   background-color: hsl(0, 0%, 98%);
 }
 
+button {
+  margin: 0.25rem;
+}
+
 select {
   background-color: hsl(209, 23%, 22%);
   color: hsl(0, 0%, 100%);
@@ -48,6 +52,10 @@ option {
   display: flex;
 }
 
+.jc-spaceevenly {
+  justify-content: space-evenly;
+}
+
 .jc-spacebetween {
   justify-content: space-between;
 }
@@ -56,15 +64,15 @@ option {
   align-items: center;
 }
 
-.ml-05rem{
+.ml-05rem {
   margin-left: 0.5rem;
 }
 
-.ml-20rem{
+.ml-20rem {
   margin-left: 2rem;
 }
 
-.fs-15rem{
+.fs-15rem {
   font-size: 1.5rem;
 }
 
@@ -93,6 +101,11 @@ option {
   height: 100%;
 }
 
+.country-card {
+  width: 1298px;
+  height: 401px;
+}
+
 .card {
   width: 264px;
   height: 336px;
@@ -115,6 +128,12 @@ option {
   width: 264px;
   height: 176px;
   border: 1px solid hsl(209, 23%, 22%);
+}
+
+.card-large-img-container {
+  width: 560px;
+  height: 401px;
+  border: 1px solid hsl(207, 26%, 17%);
 }
 
 .cards-container {
