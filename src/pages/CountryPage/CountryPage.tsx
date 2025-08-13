@@ -1,7 +1,7 @@
 import { useNavigate, useParams } from "react-router-dom";
 import { useFetch } from "../../hooks/useFetch";
 import dataCCA3ToName from '../../data/dataCCA3ToName.json' with {type: 'json'};
-import type { CCA3ToCountry } from "../../types";
+import type { CCA3ToCountry } from "../../types"; // odd, that it doesn't require 'index' in the file reference.
 
 const objCCA3ToCountry: CCA3ToCountry = dataCCA3ToName;
 
@@ -11,8 +11,8 @@ export const CountryPage = () => {
   const navigate = useNavigate();
   const { data, loading, error } = useFetch(`https://restcountries.com/v3.1/name/${country}?fields=name,population,region,subregion,capital,flags,tld,currencies,languages,borders`);
 
-  const handleSubmitCountryeSelect = (event: any) => {
-    navigate(`/country/${event.target.name}`);
+  const handleSubmitCountrySelect = (event: React.MouseEvent<HTMLButtonElement>) => {
+    navigate(`/country/${event.currentTarget.name}`);
   }
 
   if (loading) {
@@ -52,7 +52,7 @@ export const CountryPage = () => {
 
         <div className='flex ai-center jc-spaceevenly flex-wrap'>
 
-          <div className='card-large-img-container'>
+          <div className='card-large-img-container flex ai-center'>
             <img className='of-contain wh100' src={data[0].flags.svg} alt={`Flag of ${data[0].name.common}`} />
           </div>
 
@@ -91,7 +91,7 @@ export const CountryPage = () => {
             <div className='section4 ml-20rem'>
               <div className="flex flex-wrap ai-center">
                 <span>Border Countries:</span>
-                {bordersArray.map((element: string) => <button key={objCCA3ToCountry[element]} name={objCCA3ToCountry[element]} onClick={handleSubmitCountryeSelect}>{objCCA3ToCountry[element]}</button>)}
+                {bordersArray.map((element: string) => <button key={objCCA3ToCountry[element]} name={objCCA3ToCountry[element]} onClick={handleSubmitCountrySelect}>{objCCA3ToCountry[element]}</button>)}
               </div>
             </div>
 

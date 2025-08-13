@@ -31,15 +31,15 @@ export const SearchAndFilterBar = () => {
     }
   }
 
-    const handleSelectChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
-      if (event.target.value) {
-        setRegion(prev => {
-          return event.target.value;
-          console.log(prev); // Could just do setRegion(event.target.value) but I put this after return instead to preserve legacy code.  Eh.
-        });
-        //console.log(`SAFB region set to ${event.target.value}`);
-      }
+  const handleSelectChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+    if (event.target.value) {
+      setRegion(prev => {
+        return event.target.value;
+        console.log(prev); // Could just do setRegion(event.target.value) but I put this after return instead to preserve legacy code.  Eh.
+      });
+      //console.log(`SAFB region set to ${event.target.value}`);
     }
+  }
 
   return (
     <div className='flex jc-spacebetween ai-center'>
