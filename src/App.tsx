@@ -16,8 +16,6 @@ function App() {
     <AppProvider>
       <AppWrapper>
         <TitleBar />
-        {/* <Link to="/"><span>Home Page</span></Link> */}
-        {/* <Link to="/"><span>Home Page</span></Link> */}
         <Routes>
           <Route path='/' element={<HomePage />} />
           <Route path='/country/:country' element={<CountryPage />} />
