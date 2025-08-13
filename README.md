@@ -1,5 +1,5 @@
 Cats of the World
-![Cats of the World](/image.png)
+![Cats of the World](image.png)
 Image credit: Google Gemini AI.
 
 ## Setup
