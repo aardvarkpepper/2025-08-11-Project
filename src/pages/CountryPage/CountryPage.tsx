@@ -53,7 +53,7 @@ export const CountryPage = () => {
         <div className='flex ai-center jc-spaceevenly flex-wrap'>
 
           <div className='card-large-img-container flex ai-center'>
-            <img className='of-contain wh100' src={data[0].flags.svg} alt={`Flag of ${data[0].name.common}`} />
+            <img className='of-contain wh100' src={data[0].flags.svg} alt={data[0].flags.alt} />
           </div>
 
           <div className='section-container flex-wrap'>
@@ -66,7 +66,7 @@ export const CountryPage = () => {
               <div className='section2 ml-20rem pr-80rem '>
                 <div><span className='fw-800'>Native Name:</span><span>&nbsp;{nativeName}</span></div>
                 <br />
-                <div><span className='fw-800'>Population:</span><span>&nbsp;{data[0].population}</span></div>
+                <div><span className='fw-800'>Population:</span><span>&nbsp;{data[0].population.toLocaleString('en-US')}</span></div>
                 <br />
                 <div><span className='fw-800'>Region:</span><span>&nbsp;{data[0].region}</span></div>
                 <br />

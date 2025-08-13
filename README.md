@@ -69,6 +69,7 @@ https://www.quora.com/How-do-you-fix-a-declared-but-its-value-is-never-read-fals
 Note:  Developer stated huge bandwidth consumption and cost were ongoing issues, so updated fetch methods to request only required data.
 https://gitlab.com/restcountries/restcountries/-/issues/265
 https://www.worldatlas.com/articles/what-languages-are-spoken-in-bosnia-and-herzegovina.html
+https://typeofnan.dev/how-to-add-thousandths-place-comma-every-three-digits-in-javascript/
 
 ## Design Decisions - Select Styling With Recent Chrome Changes
 
