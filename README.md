@@ -13,6 +13,8 @@ From there, I changed index.html to update the title shown in browser tab, and l
 
 ## Live Demo
 
+https://reliable-maamoul-e075ef.netlify.app/
+
 ## Development Process
 
 Per assignment instructions, I started from Frontend Mentor 'challenge' at http://frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca.  Read through the instructions to get an idea of how the project would need to be built.  Thought about how data would be passed from one element to another, how users would pass from viewing one element to another.  Then thought about initial styling; how elements would need to be structured to conform with dynamic styling when window size changed.
