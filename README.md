@@ -1,6 +1,10 @@
+Cats of the World
+![Cats of the World](/image.png)
+Image credit: Google Gemini AI.
+
 ## Setup
 
-This project is best viewed with Chrome, due to CSS styling that may not work with other browsers.  Notes on design decisions later.
+This project is best viewed with Chrome, due to CSS styling that may not work with other browsers.
 
 Starting in base directory, started setting up project with
 
@@ -17,33 +21,33 @@ https://reliable-maamoul-e075ef.netlify.app/
 
 ## Development Process
 
-Per assignment instructions, I started from Frontend Mentor 'challenge' at http://frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca.  Read through the instructions to get an idea of how the project would need to be built.  Thought about how data would be passed from one element to another, how users would pass from viewing one element to another.  Then thought about initial styling; how elements would need to be structured to conform with dynamic styling when window size changed.
+Per assignment instructions, I started from Frontend Mentor 'challenge' at http://frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca.  I read through the instructions to get an idea of how the project would need to be built.  Thought about how data would be passed from one element to another, how users would pass from viewing one element to another.  Then thought about initial styling; how elements would need to be structured to conform with dynamic styling when window size changed.
 
 ## Challenges Faced
 
-A few minor challenges, mostly from unfamiliarity or insufficient ideation.  I expect such issues will go away with practice.
+A few minor challenges, mostly from unfamiliarity or insufficient ideation.
 
-For example, I hadn't thought through how useFetch would pass data from one element to the next; I used useFetch in two different places thinking state would transfer, but of course each instantiation is different.  I could have switched to simple passing state up and down, but I implemented a context and provider for practice.
+For example, I hadn't thought through how useFetch would pass data from one element to the next; I used useFetch in two different places thinking state would transfer, but turns out each instantiation is different.  I could have switched to simple passing state up and down, but implemented a context and provider for practice.
 
-Tweaking CSS was a bit of a bother; for individual country display I ought to have used padding-left, but instead tried using space-between and space-evenly.
+Tweaking CSS was a bit of a bother, not because of any technical challenge, but due to lack of specifications.  Frontend Mentor did not provide enough detail or examples to handle edge cases, or generally instructions on dynamic resizing in a range of window sizes.  For example, most countries in full screen display the flag to the left of printed material, but China has fourteen neighboring countries, causing flex-wrap to display the flag above printed material.  Alternately, changing the printed material to exceed the y-axis dimensions of the flag would have broken the mold, only in a different way.
 
-Typescript a bit of a bother too, mostly defining types and such.  After practice through previous assignments (and this assignment), I've gotten to being able to resolve errors that pop up, but getting most of the work out of the way, eh.
+Typescript a bit of a bother too, mostly defining types and such.  After practice through previous assignments (and this assignment), I've gotten to being able to resolve errors that pop up.
 
 Bit of a odd spot where I used the .json provided by Frontend Mentor, then switched to fetch, and discovered the two had different data structures.
 
-Apparently Netlify will not deploy code that is considered to have Typescript 'errors', even if those errors do not prevent code from being run, including variables not being used even in context files.
+Netlify will not deploy code that is considered to have Typescript 'errors', even if those errors do not prevent code from being run, including variables not being used even in context files.  When this happens, the deploy seems to be 'deploying'.  After twenty minutes had passed, I poked things and discovered the deploy hadn't worked; I changed code to suit.
 
 ## Solutions Implemented
 
-It works pretty much as intended - in the end.
+It works pretty much as intended.  Could have put in a jolly lot more work to get pixel-perfect results, but the assignment isn't graded on those criteria.
 
 There are some oddities, like accounting for irregular flag sizes, accounting for flags with white on their edges, countries with long names, but that's okay.
 
 ## Potential Improvements
 
-There's some oddities like entering 'mur' in the search field displays the country of Comoros, 'ham' displays the country of Bahamas, and so on.  This is reflective of inputs/outputs of the API, but the behavior could be explained better to users.
+There's some oddities like entering 'mur' in the search field displays the country of Comoros, 'ham' displays the country of Bahamas, and so on.  This is reflective of inputs/outputs of the API, nothing to do with the implementations I wrote.  The behavior could be explained better to users, but doing so was outside the scope of the assignment.
 
-Though I used flexbox, I think flexbox is not really suited to this assignment.
+Error functions work as intended, but are a bit plain to my mind.  I suppose that's all right.
 
 ## Resources
 
