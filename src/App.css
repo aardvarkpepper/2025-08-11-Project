@@ -8,9 +8,17 @@ button {
   box-shadow: 0 0 2px hsl(0, 0%, 52%);
 }
 
+.top-button {
+  background-color: hsl(0, 0%, 98%);
+}
+
 .dark button {
   background-color: hsl(209, 23%, 22%);
   color: hsl(0, 0%, 100%);
+}
+
+.dark .top-button {
+  background-color: hsl(209, 23%, 22%);
 }
 
 select {

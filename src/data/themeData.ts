@@ -1,4 +1,6 @@
-export const themeData = [
+import type { Theme } from "../types";
+
+export const themeData: Theme[] = [
   {
     id: 0,
     theme: 'dark',

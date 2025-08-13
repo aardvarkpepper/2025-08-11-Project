@@ -16,7 +16,7 @@ export const TitleBar = () => {
   return (
     <div className='dark-alt flex jc-spacebetween ai-center'>
       <button className='fs-15rem fw-800 p-12rem ml-20rem' onClick={() => navigate(`/`)}>Where in the world?</button>
-      <button key={theme.id} className='flex ai-center' onClick={() => cycleTheme(theme.id)}><img src={theme.theme === 'dark' ? lightDarkModeIcon : darkDarkModeIcon}></img><div className='ml-05rem'>Dark Mode</div></button>
+      <button key={theme.id} className='flex ai-center' onClick={() => cycleTheme(theme.id)}><img className='top-button' src={theme.theme === 'dark' ? lightDarkModeIcon : darkDarkModeIcon}></img><div className='ml-05rem'>Dark Mode</div></button>
     </div>
   )
 }

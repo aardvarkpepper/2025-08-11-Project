@@ -31,11 +31,11 @@ export const SearchAndFilterBar = () => {
     }
   }
 
-    const handleSelectChange = (event: any) => {
+    const handleSelectChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
       if (event.target.value) {
         setRegion(prev => {
-          console.log(prev);
           return event.target.value;
+          console.log(prev); // Could just do setRegion(event.target.value) but I put this after return instead to preserve legacy code.  Eh.
         });
         //console.log(`SAFB region set to ${event.target.value}`);
       }
